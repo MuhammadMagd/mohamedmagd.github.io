@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080B14">
+  <!-- EDIT: page title and description -->
+  <title>Mohamed Khattab | Computer Science Student</title>
+  <meta name="description" content="Portfolio of Mohamed Khattab, a student interested in computer science, artificial intelligence, computer vision and robotics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) { document.documentElement.setAttribute('data-theme', 'dark'); }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="#home">MK</a><!-- EDIT: your initials -->
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="theme-toggle" role="group" aria-label="Color theme">
+          <button type="button" data-theme="dark" aria-pressed="true"><span aria-hidden="true">&#9790;</span> Dark</button>
+          <button type="button" data-theme="light" aria-pressed="false"><span aria-hidden="true">&#9728;</span> Light</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div>
+          <!-- EDIT: status, name, role, intro, social links -->
+          <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>High School Student</p>
+          <p class="hero-hello">Hello, I'm</p>
+          <h1>Mohamed Khattab</h1>
+          <p class="role-badge">High School Student • Computer Science &amp; AI</p>
+          <p class="hero-desc">I’m an ambitious Egyptian high school student interested in Computer Science, Artificial Intelligence, and building practical technology through hands-on learning.</p>
+          <ul class="social" aria-label="Social links">
+            <li><a href="https://github.com/MuhammadMagd" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
+            <li><a href="mailto:muhammad.magd2009@gmail.com" aria-label="Email"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a></li>
+            <li>
+  <a href="https://www.instagram.com/muhammad_ma9d/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Instagram">
+    <svg class="icon"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="1.8"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+      <circle cx="12" cy="12" r="4"></circle>
+      <circle cx="17.5" cy="6.5" r="1"></circle>
+    </svg>
+  </a>
+</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn" href="#about">About Me</a>
+            <a class="btn btn-outline" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <!-- Decorative monogram. EDIT: change the letters in the <text> element -->
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 320 320" focusable="false">
+            <circle class="hv-disc" cx="160" cy="160" r="150"/>
+            <circle class="hv-ring" cx="160" cy="160" r="116"/>
+            <polyline class="hv-link" points="216,60 260,218 60,218 60,102 216,60"/>
+            <circle class="hv-node" cx="216" cy="60" r="6"/>
+            <circle class="hv-node alt" cx="260" cy="218" r="6"/>
+            <circle class="hv-node" cx="60" cy="218" r="6"/>
+            <circle class="hv-node alt" cx="60" cy="102" r="6"/>
+            <text class="hv-mono" x="160" y="194">MK</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section reveal" id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="prose">
+          <!-- EDIT: your own words -->
+          <p>I’m an Egyptian high school student interested in Computer Science. I first became interested in programming at a young age, and my favorite way to learn has been to build things and experiment with practical projects.</p>
+          <p>Right now I’m most interested in Artificial Intelligence, especially Computer Vision and Robotics. I’m currently learning Python, partly as a foundation for exploring Computer Vision, and I want to explore Robotics more deeply in the future. I’m still learning, and I want to turn what I learn into real projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section reveal" id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <!-- EDIT: copy a timeline-item for each school, course or certificate -->
+        <ol class="timeline">
+          <li class="card timeline-item">
+            <p class="meta">Expected Graduation: 2027</p>
+            <h3>Shawa Secondary Joint School</h3>
+            <p>High School Student</p>
+          </li>
+          <li class="card timeline-item">
+            <p class="meta">Certificate</p>
+            <h3>Microsoft Office</h3>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section reveal" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <!-- EDIT: add or remove <li> items; copy a skill-group for a new category -->
+        <div class="grid grid-4">
+          <div class="card skill-group">
+            <h3>Programming</h3>
+            <ul class="tags"><li>Python</li></ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Web</h3>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Tools</h3>
+            <ul class="tags"><li>Git</li><li>GitHub</li></ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Currently Learning</h3>
+            <p>Python for deeper programming practice and future Computer Vision work</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section reveal" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-intro">I’m working on a few projects right now. I’ll add them here with screenshots and links as they’re ready.</p>
+        <div class="grid grid-3">
+
+          <!-- TEMPLATE for a finished project. Copy it, remove the comment markers, fill it in,
+               and replace one "In Progress" card. Delete a link you do not have.
+          <article class="card project-card">
+            <div class="card-media">
+              <img src="assets/images/projects/your-screenshot.png" alt="Screenshot of PROJECT NAME" width="640" height="360" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Project name</h3>
+              <p>One or two sentences about what it does.</p>
+              <ul class="tags"><li>Python</li></ul>
+              <div class="card-actions">
+                <a class="btn btn-small btn-outline" href="GITHUB-REPO-URL" target="_blank" rel="noopener" aria-label="GitHub repository for PROJECT NAME">GitHub</a>
+                <a class="btn btn-small" href="LIVE-DEMO-URL" target="_blank" rel="noopener" aria-label="Live demo of PROJECT NAME">Live Demo</a>
+              </div>
+            </div>
+          </article>
+          -->
+
+          <article class="card project-card">
+            <div class="card-media">
+              <div class="media-wip" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span class="badge">In Progress</span>
+            </div>
+            <div class="card-body">
+              <h3>Project in Progress</h3>
+              <p>Currently developing a personal project while expanding my programming and problem-solving skills.</p>
+              <ul class="tags"><li>Python</li></ul>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="card-media">
+              <div class="media-wip" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span class="badge">In Progress</span>
+            </div>
+            <div class="card-body">
+              <h3>Project in Progress</h3>
+              <p>Currently exploring and building another project as part of my Computer Science learning journey.</p>
+              <ul class="tags"><li>TBA / Currently Developing</li></ul>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="card-media">
+              <div class="media-wip" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span class="badge">In Progress</span>
+            </div>
+            <div class="card-body">
+              <h3>Project in Progress</h3>
+              <p>Project currently under development.</p>
+              <ul class="tags"><li>TBA</li></ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section class="section reveal" id="activities">
+      <div class="container">
+        <h2>Activities &amp; Interests</h2>
+        <!-- EDIT: copy an <li> to add an activity -->
+        <ul class="grid grid-3">
+          <li class="activity"><h3>Swimming</h3><p>I have a long-standing interest in swimming and enjoy training, improving, and exploring the sport.</p></li>
+          <li class="activity"><h3>AI / Computer Science</h3><p>Interested in programming, Artificial Intelligence, Computer Vision, and learning through practical projects.</p></li>
+          <li class="activity"><h3>Entrepreneurship</h3><p>Interested in startups, technology-driven ideas, and eventually building products of my own.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section reveal" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section-intro">The best way to reach me is by email.</p>
+        <!-- EDIT: email and profile links -->
+        <ul class="contact-list">
+          <li><a class="card contact-link" href="mailto:muhammad.magd2009@gmail.com"><span>Email</span>muhammad.magd2009@gmail.com</a></li>
+          <li><a class="card contact-link" href="https://github.com/MuhammadMagd" target="_blank" rel="noopener"><span>GitHub</span>github.com/MuhammadMagd</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Mohamed Khattab. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
